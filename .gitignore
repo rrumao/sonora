@@ -1,2 +1,3 @@
 venv/
 backend/.env
+.DS_Store
