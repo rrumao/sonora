@@ -23,9 +23,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.variable} ${montserrat.variable} font-sans min-h-screen bg-background`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${montserrat.variable} font-sans min-h-screen bg-background`} suppressHydrationWarning>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <div className="relative min-h-screen flex flex-col">
             <Header />
             <main className="flex-1">{children}</main>
