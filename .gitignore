@@ -1,6 +1,3 @@
 venv/
 backend/.env
-backend/.venv
-backend/.python-version
-backend/pyproject.toml
-backend/uv.lock
+.DS_Store
