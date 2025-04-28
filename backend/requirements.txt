@@ -1,0 +1,3 @@
+python-dotenv==1.0.0
+twilio==8.12.0
+pandas==2.2.1 
