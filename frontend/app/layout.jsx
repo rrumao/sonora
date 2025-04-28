@@ -3,7 +3,6 @@ import { Inter, Montserrat } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/shared/header"
 import Footer from "@/components/shared/footer"
-import SoundWavesBackground from "@/components/SoundWavesBackground"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +27,6 @@ export default function RootLayout({ children }) {
       <body className={`${inter.variable} ${montserrat.variable} font-sans min-h-screen bg-background`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <div className="relative min-h-screen flex flex-col">
-            <SoundWavesBackground />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
