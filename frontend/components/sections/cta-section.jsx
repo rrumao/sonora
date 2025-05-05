@@ -46,11 +46,12 @@ export default function CtaSection() {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Join the waitlist today and be among the first businesses to experience Sonora's AI voice agent technology.
           </p>
-
+          <a href="mailto:mrugank@mit.edu">
           <Button size="lg" className="group">
             Request Early Access
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+            </Button>
+          </a>
         </div>
       </div>
     </section>
