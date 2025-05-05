@@ -4,36 +4,33 @@ import { ArrowLeft, Github, Linkedin, Twitter } from "lucide-react"
 
 const founders = [
   {
-    name: "Alex Chen",
-    role: "CEO & Co-Founder",
-    bio: "Former Product Lead at Google Assistant. Alex has over 10 years of experience in AI and voice technology, with a passion for creating natural human-computer interactions. He leads Sonora's product vision and strategy.",
+    name: "Ryan Rumao",
+    role: "Co-Founder",
+    bio: "Bachelor's in Computer Science & Data Science from University of Wisconsin-Madison. Incoming Master's in Business Analytics from Duke University Fuqua School of Business.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
+      linkedin: "www.linkedin.com/in/ryanrumao",
+      github: "https://github.com/rrumao",
     },
   },
   {
-    name: "Maya Rodriguez",
-    role: "CTO & Co-Founder",
-    bio: "Previously Engineering Director at OpenAI. Maya brings deep expertise in natural language processing and conversational AI. She leads Sonora's technical development and AI research initiatives.",
+    name: "Mrugank Pednekar",
+    role: "Co-Founder",
+    bio: "Bachelor's in Computer Science, Computer Engineering & Data Science from University of Wisconsin-Madison. Incoming Master's in Business Analytics from MIT Sloan School of Management.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/mrugankpednekar/",
+      github: "https://github.com/mrugankp",
     },
   },
   {
-    name: "David Park",
-    role: "COO & Co-Founder",
-    bio: "Former Operations Executive at Yelp. David has extensive experience in scaling operations for tech companies and deep knowledge of the local business ecosystem. He oversees Sonora's business operations and growth strategy.",
+    name: "Raihan Tanvir",
+    role: "Co-Founder",
+    bio: "Bachelor's in Computer Science from University of Wisconsin-Madison.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/raihan-tanvir/",
+      github: "https://github.com/nabitanvir",
     },
   },
 ]
@@ -58,7 +55,7 @@ export default function AboutPage() {
 
           <div className="space-y-6">
             <p>
-              Founded in 2023, Sonora emerged from a simple observation: service businesses struggle to collect
+              Founded in 2025, Sonora emerged from a simple observation: service businesses struggle to collect
               meaningful customer feedback and reviews, despite their critical importance to growth and improvement.
             </p>
 
@@ -94,10 +91,6 @@ export default function AboutPage() {
               <p className="text-sm text-muted-foreground mb-6">{founder.bio}</p>
 
               <div className="flex space-x-4 mt-auto">
-                <a href={founder.social.twitter} className="text-muted-foreground hover:text-white transition-colors">
-                  <Twitter size={20} />
-                  <span className="sr-only">Twitter</span>
-                </a>
                 <a href={founder.social.linkedin} className="text-muted-foreground hover:text-white transition-colors">
                   <Linkedin size={20} />
                   <span className="sr-only">LinkedIn</span>
@@ -109,17 +102,6 @@ export default function AboutPage() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="glass-card rounded-xl p-12 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-heading font-bold mb-6">Join Our Journey</h2>
-
-          <p className="text-muted-foreground mb-8">
-            We're building the future of customer feedback and we're looking for passionate individuals to join our
-            team.
-          </p>
-
-          <Button size="lg">View Open Positions</Button>
         </div>
       </div>
     </div>

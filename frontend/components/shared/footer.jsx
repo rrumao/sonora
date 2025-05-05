@@ -29,18 +29,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Sonora. All rights reserved.</p>
-          <div className="mt-4 md:mt-0 flex space-x-6">
-            <Link href="#" className="hover:text-white/80 transition-colors">
-              Twitter
-            </Link>
-            <Link href="#" className="hover:text-white/80 transition-colors">
-              LinkedIn
-            </Link>
-          </div>
-        </div>
       </div>
     </footer>
   )

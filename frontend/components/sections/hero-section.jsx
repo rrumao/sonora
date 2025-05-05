@@ -3,10 +3,11 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useRouter } from 'next/navigation'
 
 export default function HeroSection() {
   const containerRef = useRef(null)
-
+  const router = useRouter()
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!containerRef.current) return
@@ -62,11 +63,13 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            <Button size="lg" className="group">
-              Request Early Access
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button size="lg" variant="outline">
+            <a href="mailto:mrugank@mit.edu">
+              <Button size="lg" className="group" >
+                Request Early Access
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </a>
+            <Button size="lg" variant="outline" onClick={() => router.push('/about')}>
               Learn More
             </Button>
           </div>

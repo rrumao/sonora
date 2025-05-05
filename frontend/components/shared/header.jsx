@@ -42,9 +42,11 @@ export default function Header() {
           <Link href="/dashboard" className="text-sm font-medium hover:text-white/80 transition-colors">
             Dashboard
           </Link>
+          <a href="mailto:mrugank@mit.edu">
           <Button variant="outline" className="ml-4">
             Request Early Access
           </Button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -78,9 +80,11 @@ export default function Header() {
             >
               Dashboard
             </Link>
+            <a href="mailto:mrugank@mit.edu">
             <Button variant="outline" className="w-full mt-4">
               Request Early Access
             </Button>
+            </a>
           </nav>
         </div>
       )}
