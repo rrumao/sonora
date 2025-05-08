@@ -42,11 +42,28 @@ export default function DashboardPage() {
     }, 2000)
   }
 
-  const handleLink = (e) => {
+  const handleLink = async (e) => {
     e.preventDefault()
     if (!linkUrl) return
 
     setLinkState("linking")
+
+    try {
+      const res = await fetch("https://hook.us2.make.com/llv6q1q73ou1rp3iz8iqwu34oblfpy6i", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ sheet_url: linkUrl }),
+      })
+  
+      if (!res.ok) throw new Error("Failed to send link to Make webhook")
+  
+      setLinkState("success")
+    } catch (err) {
+      console.error("Webhook error:", err)
+      setLinkState("error")
+    }
 
     // Simulate linking process
     setTimeout(() => {
